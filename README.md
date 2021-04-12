@@ -103,15 +103,5 @@ Optional:
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
       
-#### [OPTIONAL:] Existing API Endpoints
-##### An API Of The News
-- Base URL - [https://newsapi.org](
-http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-03&sortBy=publishedAt&apiKey=API_KEY)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /News | get all of the news
-    `GET`    | /News/?name=name | return specific character by name
-    
 
 
