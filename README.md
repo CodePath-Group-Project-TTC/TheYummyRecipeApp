@@ -31,10 +31,10 @@ This application was created to have multiple different recipes items that provi
 
 **Optional Nice-to-have Stories**
 
-[ ] User can favorite specific entrees.
-[ ] User can see trending entree.
-[ ] User can create a profile.
-[ ] User can comment and like profile.
+- [ ] User can favorite specific entrees.
+- [ ] User can see trending entree.
+- [ ] User can create a profile.
+- [ ] User can comment and like profile.
 
 ### 2. Screen Archetypes
 
