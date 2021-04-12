@@ -24,7 +24,7 @@ This application was created to have multiple different recipes items that provi
 
 **Required Must-have Stories**
 
-[x] User log in.
+|Alt Text| [x] User log in.
 [x] User can sign up for a new account.
 [x] User can scroll through entrees and clicking on them to view the recipe
 
@@ -65,7 +65,6 @@ Optional:
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://raw.githubusercontent.com/CodePath-Group-Project-TTC/TheYummyRecipeApp/main/Wireframe.jpg" width=600>
 
 ### Schema
