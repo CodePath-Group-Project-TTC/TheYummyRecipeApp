@@ -66,17 +66,52 @@ Optional:
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://raw.githubusercontent.com/CodePath-Group-Project-TTC/TheYummyRecipeApp/main/Wireframe.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
+### Schema
 
-### [BONUS] Interactive Prototype
+#### Post
 
-## Schema 
-[This section will be completed in Unit 9]
-### Models
-[Add table of models]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image that user posts |
+   | caption       | String   | image caption by author |
+   | createdAt     | DateTime | date when post is created (default field) |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      
+#### [OPTIONAL:] Existing API Endpoints
+##### An API Of The News
+- Base URL - [https://newsapi.org](
+http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-03&sortBy=publishedAt&apiKey=API_KEY)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /News | get all of the news
+    `GET`    | /News/?name=name | return specific character by name
+    
+
+
