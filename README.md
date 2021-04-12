@@ -24,9 +24,9 @@ This application was created to have multiple different recipes items that provi
 
 **Required Must-have Stories**
 
-![Alt Text][x] User log in.
-![Alt Text][x] User can sign up for a new account.
-![Alt Text][x] User can scroll through entrees and clicking on them to view the recipe.
+- [x] User log in.
+- [x] User can sign up for a new account.
+- [x] User can scroll through entrees and clicking on them to view the recipe.
 ![Alt Text](http://g.recordit.co/UBG1FBZm6b.gif)
 
 **Optional Nice-to-have Stories**
